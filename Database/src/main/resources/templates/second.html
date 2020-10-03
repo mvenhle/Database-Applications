@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Numbers</title>
+</head>
+<body>
+<table>
+	<tr>
+		<th>Phone</th>
+	</tr>
+	
+	  <tr th:each="student : ${students}">
+	  <td th:text="${student.phone}">Phone</td>
+	  
+	</tr>
+</body>
+</html>

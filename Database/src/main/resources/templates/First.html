@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Names</title>
+</head>
+<body>
+<table>
+	<tr>
+		<th>FirstName</th>
+		<th>LastName</th>
+	</tr>
+	
+	  <tr th:each="student : ${students}">
+	  <td th:text="${student.firstName}">First Name</td>
+	  <td th:text="${student.lastName}">Last Name</td>
+	  
+	</tr>
+</table>
+</body>
+</html>
